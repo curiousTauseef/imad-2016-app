@@ -102,7 +102,7 @@ res.send(createTemplate(articles[articleName]));
 });
 
 var counter =0;
-app.get('/counter',function(){
+app.get('/counter',function(req,res){
    counter=counter+1;
    res.send(counter.toString());
 });
