@@ -1,18 +1,19 @@
-console.log('Loaded!');
-//changing the text
-var element= document.getElementById("main-text");
-element.innerHTML="Praveen";
-//move the image
-var img = document.getElementById("madi");
-var marginLeft=0;
-function moveright(){
-    marginLeft=marginLeft+5;
-    img.style.marginLeft=marginLeft+'px';
-    
-}
+//Counter code
+var button = document.getElementById('counter');
+var counter=0;
 
-img.onclick=function(){
-    //img.style.marginLeft='100px';
+button.onClick=function(){
+  //Make a request to the counter endpoint
+  
+  
+  //Capture the response and store it in a variable 
+  
+  
+  //render the variable in the correct span
+  counter =counter+1;
+  var span = document.getElementById('count');
+  span.innerHTML=counter.toString();
+  
+  
     
-    var interval = setInterval(moveright,50);
 };
